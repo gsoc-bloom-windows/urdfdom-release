@@ -1,18 +1,15 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>ros-dashing-urdfdom</id>
-    <version>2.2.0</version>
-    <title>ros-dashing-urdfdom</title>
-    <authors>Steven! Ragnarök</authors>
+    <id>@(Package)</id>
+    <version>@(Version)</version>
+    <title>@(Package)</title>
+    <authors>@(Authors)</authors>
     <owners>OSRF</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>A library to access URDFs using the DOM model.</description>
+    <description>@(Description)</description>
     <dependencies>
-		<dependency id="ros-dashing-console-bridge-vendor"/>
-		<dependency id="ros-dashing-tinyxml-vendor"/>
-		<dependency id="ros-dashing-urdfdom-headers" version="0.2.3"/>
-
+@[for d in Depends]@(d)@[end for]
     </dependencies>
   </metadata>
   <files>
